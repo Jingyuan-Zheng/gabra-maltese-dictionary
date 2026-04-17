@@ -1,0 +1,15 @@
+# macOS metadata
+.DS_Store
+
+# Large data files
+data/*.tar.gz
+data/gabra/
+
+# Build artifacts
+objects/
+Gabra.xml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class

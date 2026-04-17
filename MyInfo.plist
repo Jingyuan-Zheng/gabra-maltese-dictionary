@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.gabra.dictionary.maltese</string>
+	<key>CFBundleName</key>
+	<string>Ġabra Maltese Dictionary</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>DCSDictionaryCopyright</key>
+	<string>Copyright © 2026 Gabra Team</string>
+	<key>DCSDictionaryManufacturerName</key>
+	<string>Gabra</string>
+	<key>DCSDictionaryFrontMatterFileName</key>
+	<string>FrontMatter.html</string>
+	<key>DCSDictionaryPrefsHTML</key>
+	<string>Gabra_Prefs.html</string>
+</dict>
+</plist>
