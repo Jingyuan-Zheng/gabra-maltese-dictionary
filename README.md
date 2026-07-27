@@ -1,41 +1,52 @@
 # Ġabra Maltese Dictionary for macOS
 
-This project converts the [Ġabra Maltese Open Lexicon](https://mlrs.research.um.edu.mt/resources/gabra-api/) into a native macOS Dictionary application.
+A native macOS Dictionary for the [Ġabra Maltese Open Lexicon](https://mlrs.research.um.edu.mt/resources/gabra-api/), with 21,083 entries and 4.5 million searchable word forms.
 
-## Prerequisites
+## Install (recommended)
 
-1.  **macOS**
-2.  **Dictionary Development Kit**: Usually included with Xcode or can be downloaded separately. It must be located at `/Applications/Dictionary Development Kit`.
-3.  **Python 3**: For parsing the BSON data and generating the dictionary XML.
+You do **not** need Xcode, Python, or this repository to use the dictionary.
 
-## How to Build
+1. Download the latest `GabraMalteseDict_*.dmg` from [Releases](https://github.com/Jingyuan-Zheng/gabra-maltese-macos-dictionary/releases/latest).
+2. Double-click the downloaded DMG to open it.
+3. Drag `Gabra.dictionary` into the `Dictionaries` folder shown in the DMG window.
+4. Open the macOS **Dictionary** app and choose **Dictionary > Settings…**.
+5. Find and enable **Ġabra Maltese Dictionary**.
 
-1.  **Download Data**:
-    Go to the [Ġabra Download Page](https://mlrs.research.um.edu.mt/resources/gabra-api/p/download) and download the latest "Latest" version (a `.tar.gz` file).
-2.  **Place Data**:
-    Put the downloaded `.tar.gz` file into the `data/` directory of this project.
-3.  **Run Update Script**:
-    Open Terminal and run:
-    ```bash
-    chmod +x update.sh
-    ./update.sh
-    ```
-    This script will extract the data, generate the dictionary source, compile it, and install it to `~/Library/Dictionaries`.
+The dictionary is then available in Dictionary and through macOS Look Up.
 
-## Usage
+### If macOS blocks the installer
 
-1.  Open the **Dictionary** app on your Mac.
-2.  Go to **Settings...** (Cmd + ,).
-3.  Scroll to the bottom and check **Ġabra Maltese Dictionary**.
-4.  You can now search for Maltese words directly or use system-wide "Look up".
+If macOS reports that the DMG cannot be opened, Control-click the file in Finder, choose **Open**, then confirm **Open** again.
 
-## Project Structure
+## Build from source
 
-- `data/`: Place your downloaded `.tar.gz` files here.
-- `generate_gabra_xml.py`: Python script to convert BSON to Apple Dictionary XML.
-- `update.sh`: Master script to automate the update process.
-- `Makefile`, `MyInfo.plist`, `MyDict.css`: Configuration for the Dictionary Development Kit.
+This section is only for contributors or anyone who wants to generate a new dictionary from the Ġabra source data.
+
+### Requirements
+
+- macOS
+- [Dictionary Development Kit](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/DictionaryServicesProgGuide/Introduction/Introduction.html), installed at `/Applications/Dictionary Development Kit`
+- Python 3
+
+### Steps
+
+1. Visit the [Ġabra download page](https://mlrs.research.um.edu.mt/resources/gabra-api/p/download) and download the latest `.tar.gz` data archive.
+2. Create a `data/` folder in this project, if needed, and place the archive inside it.
+3. In Terminal, from the project folder, run:
+
+   ```bash
+   chmod +x update.sh
+   ./update.sh
+   ```
+
+The script extracts the data, generates the dictionary XML, builds the dictionary, and installs it in `~/Library/Dictionaries`.
+
+## Project files
+
+- `generate_gabra_xml.py` — converts Ġabra BSON data to Apple Dictionary XML.
+- `update.sh` — automates generation, building, and installation.
+- `Makefile`, `MyInfo.plist`, `MyDict.css` — Dictionary Development Kit configuration and styling.
 
 ## Credits
 
-Data provided by the [Ġabra](https://mlrs.research.um.edu.mt/resources/gabra-api/) project (University of Malta).
+Dictionary data is provided by the [Ġabra project](https://mlrs.research.um.edu.mt/resources/gabra-api/) at the University of Malta.
