@@ -1,15 +1,16 @@
-# macOS metadata
+# OS, Python, and environments
 .DS_Store
-
-# Large data files
-data/*.tar.gz
-data/gabra/
-
-# Build artifacts
-objects/
-Gabra.xml
-
-# Python
 __pycache__/
 *.py[cod]
-*$py.class
+.venv/
+
+# Upstream dumps and intermediate builds
+/data/*
+!/data/README.md
+/build/
+/macos/objects/
+/macos/Gabra.xml
+
+# Large native installers/bundles are local release assets, not Git blobs.
+/releases/
+/archive/

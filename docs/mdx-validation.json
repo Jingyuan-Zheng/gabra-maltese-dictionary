@@ -1,0 +1,18 @@
+{
+  "source_entries": 21083,
+  "unique_headwords": 19831,
+  "headwords_with_multiple_entries": 1147,
+  "corrections": [
+    {
+      "source_id": "6357914a7f1ba0e22236b65a",
+      "headword": "aħwa"
+    }
+  ],
+  "untitled_entries": [],
+  "source_body_sha256": "c0c6b8b73f74661fc26cf91e1a42307e2779795c0e93875861cfdb6173e7757d",
+  "mdx_sha256": "93188e96ae19d540d50f952fd9fe0262900e3cca583145d44340428f3202808d",
+  "css_sha256": "25cececa3f29abe5655dc2d7363e70cad6852d6e6fde253c90d1777636d2d0a8",
+  "mdx_bytes": 899382,
+  "validation": "All source entries retained; exact HTML round-trip; sorted lookup index.",
+  "reader_validation": "Offline checks do not guarantee behavior in every MDX reader."
+}

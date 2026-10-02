@@ -1,3 +1,5 @@
+import argparse
+from pathlib import Path
 import struct
 import os
 import xml.sax.saxutils as saxutils
@@ -64,17 +66,17 @@ def parse_bson_doc(f):
     doc, _ = parse_doc(data, 0)
     return doc
 
-def generate_dict():
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    lexemes_path = os.path.join(script_dir, 'data', 'gabra', 'lexemes.bson')
-    wordforms_path = os.path.join(script_dir, 'data', 'gabra', 'wordforms.bson')
-    xml_output_path = os.path.join(script_dir, 'Gabra.xml')
+def generate_dict(data_dir, xml_output_path):
+    script_dir = str(data_dir)
+    lexemes_path = os.path.join(script_dir, 'lexemes.bson')
+    wordforms_path = os.path.join(script_dir, 'wordforms.bson')
+    Path(xml_output_path).parent.mkdir(parents=True, exist_ok=True)
     
     lexemes = {}
     print(f"Reading lexemes from {lexemes_path}...")
     if not os.path.exists(lexemes_path):
         print(f"Error: {lexemes_path} not found.")
-        return
+        raise FileNotFoundError("Required BSON input is missing")
         
     with open(lexemes_path, 'rb') as f:
         while True:
@@ -95,7 +97,7 @@ def generate_dict():
     print(f"Reading wordforms from {wordforms_path} (this may take a while)...")
     if not os.path.exists(wordforms_path):
         print(f"Error: {wordforms_path} not found.")
-        return
+        raise FileNotFoundError("Required BSON input is missing")
 
     count = 0
     with open(wordforms_path, 'rb') as f:
@@ -146,4 +148,9 @@ def generate_dict():
     print("Done!")
 
 if __name__ == "__main__":
-    generate_dict()
+    root = Path(__file__).resolve().parents[1]
+    parser = argparse.ArgumentParser(description='Convert upstream Gabra BSON to Apple Dictionary XML')
+    parser.add_argument('--data-dir', type=Path, default=root / 'data/gabra')
+    parser.add_argument('--output', type=Path, default=root / 'macos/Gabra.xml')
+    args = parser.parse_args()
+    generate_dict(args.data_dir, args.output)

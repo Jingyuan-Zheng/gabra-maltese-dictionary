@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* Dictionary entries inherit the reader's foreground and background.
+   This also works when the reader's theme differs from the system theme. */
+.gabra-entry {
+    margin-bottom: 1em;
+    color: inherit;
+    background: transparent;
+    line-height: 1.6;
+}
+
+.gabra-entry h1 {
+    font-size: 1.5em;
+    color: inherit;
+    margin: 0;
+}
+
+.gabra-entry .pos {
+    font-style: italic;
+    color: inherit;
+    font-size: 0.9em;
+    margin-right: 1em;
+}
+
+.gabra-entry .phonetic {
+    color: inherit;
+    font-family: serif;
+}
+
+.gabra-entry .root {
+    color: inherit;
+    font-size: 0.9em;
+    margin-top: 0.3em;
+}
+
+.gabra-entry ol {
+    margin-top: 0.5em;
+    padding-left: 2em;
+}
+
+.gabra-entry li {
+    margin-bottom: 0.3em;
+}
