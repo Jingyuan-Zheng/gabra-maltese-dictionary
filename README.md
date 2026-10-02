@@ -17,20 +17,21 @@ For the other platforms, install a reader below, then [download and import the M
 
 | Platform | Recommended app | Notes | Download |
 |---|---|---|---|
-| 📱 iPhone / iPad | **OpenMDict — first choice** | Free and open source; supports MDX/MDD. | [![App Store][app-store-badge]](https://apps.apple.com/app/id6759032057) |
-| 📱 iPhone / iPad | MDict | An established MDX reader and a useful alternative. | [![App Store][app-store-badge]](https://apps.apple.com/app/id389083586) |
-| 🤖 Android | **DictTango — first choice** | Feature-rich; suited to frequent MDX use. | [![GitHub][github-badge]](https://github.com/Jimex/DictTango-Android/releases) |
-| 🤖 Android | MDict | A traditional, focused MDX reader. | [![Google Play][google-play-badge]](https://play.google.com/store/apps/details?id=cn.mdict) · [Official download](https://www.mdict.cn/wp/?page_id=5227&lang=en) |
-| 🪟 Windows | **GoldenDict-ng — first choice** | Open source, with extensive dictionary-management and lookup features. | [![GitHub][github-badge]](https://github.com/xiaoyifang/goldendict-ng/releases/latest) |
-| 🪟 Windows | DictTango Windows | An alternative for users already familiar with DictTango on Android. | [![GitHub][github-badge]](https://github.com/Jimex/DictTango-Windows/releases) |
-| 🐧 Linux | **GoldenDict-ng — first choice** | Open source; available through Flathub and distribution packages. | [![Install guide][install-badge]](https://xiaoyifang.github.io/goldendict-ng/install/#linux) |
-| 🍎 macOS | **Apple Dictionary — first choice** | Built into macOS; use our native `.dictionary` edition. | [![Native dictionary][native-badge]](https://github.com/Jingyuan-Zheng/gabra-maltese-dictionary/releases/download/v1.0/GabraMalteseDict_v1.0.dmg) |
-| 🍎 macOS | GoldenDict-ng | A feature-rich MDX option for managing a large dictionary collection. | [![GitHub][github-badge]](https://github.com/xiaoyifang/goldendict-ng/releases/latest) |
-| 🍎 macOS | MDict | A simpler MDX option for focused word lookup. | [![App Store][app-store-badge]](https://apps.apple.com/app/id389083586?platform=mac) |
+| iPhone / iPad | **OpenMDict — first choice** | Free and open source; supports MDX/MDD. | [![App Store][app-store-badge]](https://apps.apple.com/app/id6759032057) |
+| iPhone / iPad | MDict | An established MDX reader and a useful alternative. | [![App Store][app-store-badge]](https://apps.apple.com/app/id389083586) |
+| Android | **DictTango — first choice** | Feature-rich; suited to frequent MDX use. | [![GitHub][github-badge]](https://github.com/Jimex/DictTango-Android/releases) |
+| Android | MDict | A traditional, focused MDX reader. | [![Google Play][google-play-badge]](https://play.google.com/store/apps/details?id=cn.mdict) · [![Official download][official-download-badge]](https://www.mdict.cn/wp/?page_id=5227&lang=en) |
+| Windows | **GoldenDict-ng — first choice** | Open source, with extensive dictionary-management and lookup features. | [![GitHub][github-badge]](https://github.com/xiaoyifang/goldendict-ng/releases/latest) |
+| Windows | DictTango Windows | An alternative for users already familiar with DictTango on Android. | [![GitHub][github-badge]](https://github.com/Jimex/DictTango-Windows/releases) |
+| Linux | **GoldenDict-ng — first choice** | Open source; available through Flathub and distribution packages. | [![Install guide][install-badge]](https://xiaoyifang.github.io/goldendict-ng/install/#linux) |
+| macOS | **Apple Dictionary — first choice** | Built into macOS; use our native `.dictionary` edition. | [![Native dictionary][native-badge]](https://github.com/Jingyuan-Zheng/gabra-maltese-dictionary/releases/download/v1.0/GabraMalteseDict_v1.0.dmg) |
+| macOS | GoldenDict-ng | A feature-rich MDX option for managing a large dictionary collection. | [![GitHub][github-badge]](https://github.com/xiaoyifang/goldendict-ng/releases/latest) |
+| macOS | MDict | A simpler MDX option for focused word lookup. | [![App Store][app-store-badge]](https://apps.apple.com/app/id389083586?platform=mac) |
 
 [app-store-badge]: https://img.shields.io/badge/App_Store-0D96F6?style=flat-square&logo=appstore&logoColor=white
 [github-badge]: https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white
 [google-play-badge]: https://img.shields.io/badge/Google_Play-414141?style=flat-square&logo=googleplay&logoColor=white
+[official-download-badge]: https://img.shields.io/badge/Official_download-2563EB?style=flat-square
 [install-badge]: https://img.shields.io/badge/Install_guide-2563EB?style=flat-square
 [native-badge]: https://img.shields.io/badge/Download_DMG-555555?style=flat-square&logo=apple&logoColor=white
 
