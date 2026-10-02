@@ -4,14 +4,18 @@ An offline Maltese dictionary based on the **Ġabra Maltese Open Lexicon**, avai
 
 | Format | Entries | Download |
 |---|---|---|
-| MDX + CSS | 19,831 headwords containing 21,083 records | [Gabra.mdx](dictionaries/mdx/Gabra.mdx) · [Gabra.css](dictionaries/mdx/Gabra.css) |
+| MDX + CSS | 19,831 headwords containing 21,083 records | [MDX download (ZIP)](https://github.com/Jingyuan-Zheng/gabra-maltese-dictionary/releases/download/v1.0/GabraMalteseDict_MDX_v1.0.zip) |
 | macOS `.dictionary` | 21,083 entries with approximately 4.5 million searchable word forms | [Releases](https://github.com/Jingyuan-Zheng/gabra-maltese-dictionary/releases) |
 
 The MDX edition supports headword lookup. The native macOS edition also includes inflected word forms.
 
 ## Install MDX
 
-Download `Gabra.mdx` and `Gabra.css` using GitHub's **Download raw file** button. Keep both files in the same folder and import them into an MDX-compatible dictionary reader.
+1. Download [GabraMalteseDict_MDX_v1.0.zip](https://github.com/Jingyuan-Zheng/gabra-maltese-dictionary/releases/download/v1.0/GabraMalteseDict_MDX_v1.0.zip) from [Initial Release - v1.0](https://github.com/Jingyuan-Zheng/gabra-maltese-dictionary/releases/tag/v1.0).
+2. Extract the ZIP. It contains `Gabra.mdx` and `Gabra.css`.
+3. Keep both files in the same folder and import them into an MDX-compatible dictionary reader.
+
+The individual files are also available in [`dictionaries/mdx/`](dictionaries/mdx/).
 
 The stylesheet follows the reader's light or dark theme. To customize the appearance, edit `Gabra.css`.
 
